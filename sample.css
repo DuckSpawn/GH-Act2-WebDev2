@@ -1,0 +1,167 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#search{
+    margin: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,td,tr{
+    text-align: left;
+    padding: 10px;
+
+}
+
+th{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    
+    background: linear-gradient(to right,rgb(206, 227, 255) , white);
+}
+
+tr:nth-child(1){
+    background: linear-gradient(to right, #2eb6ff , #ff3d91);
+    pointer-events: none;
+}
+
+
+tr:hover{
+    background: linear-gradient(to right,lightsteelblue , rgb(207, 228, 255));
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+
+#btn{
+    background-image: linear-gradient(to right, #6eccff , #ff58a0);
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+#btn:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, #0370aa , #a7054b);
+    border-bottom-right-radius: 20px;
+    transition: .3s;
+    
+
+}
+
+label{
+    display: block;
+    padding: 20px;
+    line-height: 1px;
+}
+
+label#title{
+    font-weight: bolder;
+    text-align: center;
+    background-color: #008EDC;
+    color: white;
+    line-height: 20px;
+}
+
+label#movieCode::before{
+    content: "Movie Code: ";
+}
+
+label#director::before{
+    content: "Director: ";
+}
+
+label#genre::before{
+    content: "Genre: ";
+}
+
+label#dateOfRelease::before{
+    content: "Date of Release: ";
+}
+
+::before{
+    font-weight: bolder;
+}
+
+
+
+img{
+    display: block;
+}
+
+#imagePath{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.close-btn{
+    background-color: darkred;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: fit-content;
+    float: right;
+    border-top-left-radius: 10px;
+    cursor: pointer;   
+}
+
+#modalContent{
+    margin: auto;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#modal{
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 50px; 
+  padding-bottom: 50px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+#imgFull{
+    height: 100vh;
+    width: auto;
+    top: 0;
+    left: 0;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
