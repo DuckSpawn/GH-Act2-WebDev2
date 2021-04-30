@@ -73,7 +73,6 @@ function myFunction(search){
 }
 
 function showDetails(moviecode){
-    console.log("showdetails");
     html = "";
     movies = xml.getElementsByTagName("movie");
     for (const movie of movies) {
